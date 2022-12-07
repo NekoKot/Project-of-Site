@@ -265,3 +265,13 @@ footer {
 			text-align: center;
 		}
 	}
+
+	@media screen and (min-width: 1100px) {
+		main {
+			margin: 0 30px;
+		}
+		header {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
