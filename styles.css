@@ -69,7 +69,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin: 50px 0 150px 0;
+	margin: 50px 15px 150px 15px;
 }
 
 header > img {
@@ -78,10 +78,14 @@ header > img {
 
 .menu > a {
 	font-size: 25px;
-	margin-right: 25px;
+	margin: 0 25px 0 35px;
 	font-weight: 500;
 	color: var(--main-color);
 	position: relative;
+}
+
+main {
+	margin: 0 15px;
 }
 
 h1 {
@@ -99,10 +103,10 @@ font-size: 40px;
 }
 
 .block {
-	width: 30%;
-	height: 270px;
+	width: 32%;
 	position: relative;
-	margin: 50px 0;
+	margin: 10px 0 10px 0;
+	aspect-ratio: 16 / 9;
 }
 
 .block-foto {
@@ -119,6 +123,7 @@ font-size: 40px;
 	font-size: 25px;
 	left: 20px;
 	bottom: 20px;
+	margin-right: 10px;
 } 
 
 .cover {
@@ -138,12 +143,14 @@ font-size: 40px;
 	width: 50px;
 }
 
-div:nth-of-type(4) {
-	width: 65%;
+.block:nth-of-type(4) {
+	width: 66%;
+	aspect-ratio: 16 / 4.4;
 }
 
-div:nth-of-type(7) {
-	width: 65%;
+.block:nth-of-type(7) {
+	width: 66%;
+	aspect-ratio: 16 / 4.4;
 }
 
 footer {
@@ -168,7 +175,7 @@ footer {
 
 .contacts > a {
 	color: var(--main-color);
-	margin-right: 70px;
+	margin-right: 50px;
 }
 
 .name-of-company {
@@ -198,6 +205,7 @@ footer {
 		}
 		.menu {
 			margin-top: 50px;
+			text-align: center;
 		}
 		h1 {
 			text-align: center;
@@ -211,12 +219,13 @@ footer {
 			margin: 10px 20px;
 			text-align: left;
 		}
-		div:nth-of-type(4) {
+		.block:nth-of-type(4) {
 			width: 45%;
+			aspect-ratio: 16 / 9;
 		}
-		
-		div:nth-of-type(7) {
+		.block:nth-of-type(7) {
 			width: 45%;
+			aspect-ratio: 16 / 9;
 		}
 	}
 
@@ -232,18 +241,27 @@ footer {
 			width: 100%;
 			margin: 30px 0;
 		}
-		div:nth-of-type(4) {
+		.block:nth-of-type(4) {
 			width: 100%;
 		}
-		div:nth-of-type(7) {
+		.block:nth-of-type(7) {
 			width: 100%;
 		}
 		header {
-			text-align: center;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		.contacts > a {
+			display: block;
+			margin: 10px 0;
+		}
+		header > a > img {
+			width: 300px;
 		}
 	}
+	
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 830px) {
 		.main-block {
 			display: flex;
 			flex-wrap: nowrap;
@@ -255,23 +273,13 @@ footer {
 			width: 100%;
 			margin: 30px 0;
 		}
-		div:nth-of-type(4) {
+		.block:nth-of-type(4) {
 			width: 100%;
 		}
-		div:nth-of-type(7) {
+		.block:nth-of-type(7) {
 			width: 100%;
 		}
 		header {
 			text-align: center;
-		}
-	}
-
-	@media screen and (min-width: 1100px) {
-		main {
-			margin: 0 30px;
-		}
-		header {
-			margin-left: 30px;
-			margin-right: 30px;
 		}
 	}
